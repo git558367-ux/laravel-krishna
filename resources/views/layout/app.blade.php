@@ -13,20 +13,20 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <title> @yield('title') </title>
-    <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="fonts/Linearicons/Font/demo-files/demo.css">
+    <link rel="stylesheet" href="{{ asset('plugins/font-awesome/css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('fonts/Linearicons/Font/demo-files/demo.css') }}">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="../../css?family=Jost:400,500,600,700&amp;display=swap&amp;ver=1607580870">
-    <link rel="stylesheet" href="plugins/bootstrap4/css/bootstrap.min.css">
-    <link rel="stylesheet" href="plugins/owl-carousel/assets/owl.carousel.css">
-    <link rel="stylesheet" href="plugins/slick/slick/slick.css">
-    <link rel="stylesheet" href="plugins/lightGallery/dist/css/lightgallery.min.css">
-    <link rel="stylesheet" href="plugins/jquery-bar-rating/dist/themes/fontawesome-stars.css">
-    <link rel="stylesheet" href="plugins/select2/dist/css/select2.min.css">
-    <link rel="stylesheet" href="plugins/lightGallery/dist/css/lightgallery.min.css">
-    <link rel="stylesheet" href="plugins/noUiSlider/nouislider.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/home-1.css">
+    <link rel="stylesheet" href="{{ asset('plugins/bootstrap4/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('plugins/owl-carousel/assets/owl.carousel.css') }}">
+    <link rel="stylesheet" href="{{ asset('plugins/slick/slick/slick.css') }}">
+    <link rel="stylesheet" href="{{ asset('plugins/lightGallery/dist/css/lightgallery.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('plugins/jquery-bar-rating/dist/themes/fontawesome-stars.css') }}">
+    <link rel="stylesheet" href="{{ asset('plugins/select2/dist/css/select2.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('plugins/lightGallery/dist/css/lightgallery.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('plugins/noUiSlider/nouislider.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/home-1.css') }}">
 </head>
 
 <body>
@@ -941,17 +941,17 @@
         </div>
     </div>
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-    <script src="plugins/jquery.min.js"></script>
-    <script src="plugins/popper.min.js"></script>
-    <script src="plugins/bootstrap4/js/bootstrap.min.js"></script>
-    <script src="plugins/select2/dist/js/select2.full.min.js"></script>
-    <script src="plugins/owl-carousel/owl.carousel.min.js"></script>
-    <script src="plugins/jquery-bar-rating/dist/jquery.barrating.min.js"></script>
-    <script src="plugins/lightGallery/dist/js/lightgallery-all.min.js"></script>
-    <script src="plugins/slick/slick/slick.min.js"></script>
-    <script src="plugins/noUiSlider/nouislider.min.js"></script>
+    <script src="{{ asset('plugins/jquery.min.js') }}"></script>
+    <script src="{{ asset('plugins/popper.min.js') }}"></script>
+    <script src="{{ asset('plugins/bootstrap4/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('plugins/select2/dist/js/select2.full.min.js') }}"></script>
+    <script src="{{ asset('plugins/owl-carousel/owl.carousel.min.js') }}"></script>
+    <script src="{{ asset('plugins/jquery-bar-rating/dist/jquery.barrating.min.js') }}"></script>
+    <script src="{{ asset('plugins/lightGallery/dist/js/lightgallery-all.min.js') }}"></script>
+    <script src="{{ asset('plugins/slick/slick/slick.min.js') }}"></script>
+    <script src="{{ asset('plugins/noUiSlider/nouislider.min.js') }}"></script>
     <!-- custom code-->
-    <script src="js/main.js"></script>
+    <script src="{{ asset('js/main.js') }}"></script>
 </body>
 
 </html>

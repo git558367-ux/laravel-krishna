@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\PostController;
+use Faker\Guesser\Name;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -29,3 +30,15 @@ Route::get('/contact',[PostController::class,'contact']);
 Route::post('/post',[PostController::class,'create']);
 
 Route::get('/signin',[PostController::class,'sign']);
+
+Route::get('/create/post',[PostController::class,'createPost']);
+
+Route::get('/blogs',[PostController::class,'blogs'])->name('blogs');
+
+Route::get('/delete/post/{id}',[PostController::class,'deletePost'])->name('delete.post');
+
+
+#admin
+Route::get('/admin',[PostController::class,'admin']);
+
+Route::get('/admin/profile',[PostController::class,'profile']);
