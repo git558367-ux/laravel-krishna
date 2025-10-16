@@ -37,6 +37,10 @@ Route::get('/blogs',[PostController::class,'blogs'])->name('blogs');
 
 Route::get('/delete/post/{id}',[PostController::class,'deletePost'])->name('delete.post');
 
+Route::get('/post/edit/{id}', [PostController::class, 'editPost'])->name('edit.post');
+
+Route::post('/post/update/{id}', [PostController::class, 'updatePost'])->name('update.post');
+
 
 #admin
 Route::get('/admin',[PostController::class,'admin']);

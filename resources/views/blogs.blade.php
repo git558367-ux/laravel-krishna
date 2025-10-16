@@ -30,6 +30,8 @@
                                                 <p class="ps-blog__desc"> {{ $post['description'] }} </p>
                                                 <a href="{{ route('delete.post', $post['id']) }}"
                                                     class="btn btn-danger">Delete</a>
+                                                <a href="{{ route('edit.post', $post['id']) }}"
+                                                    class="btn btn-info">Edit</a>
                                             </div>
                                         </div>
                                     </div>

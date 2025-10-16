@@ -29,7 +29,7 @@
                         </div>
                     </div>
                     <div class="ps-form__submit">
-                        <button class="ps-btn ps-btn--warning">Send message</button>
+                        <button class="ps-btn ps-btn--warning">Create Blog</button>
                     </div>
                 </div>
             </form>

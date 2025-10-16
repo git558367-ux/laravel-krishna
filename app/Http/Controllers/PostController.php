@@ -29,7 +29,6 @@ class PostController extends Controller
         'title'=>'required',
         'description'=>'required',
         'image'=>'required|image|mimes:jpeg,png,jpg,gif'
-
         ]);
         
         $imageName = time().'.'. $request->image->extension();
@@ -69,4 +68,47 @@ public function deletePost($id){
 
     return redirect()->route('blogs');
 }
+
+
+public function editPost($id)
+{
+    $post = Post::findOrFail($id);
+    return view('edit-post', compact('post'));
+}
+
+public function updatePost(Request $request, $id)
+{
+    $post = Post::findOrFail($id);
+
+    $request->validate([
+        'title' => 'required',
+        'description' => 'required',
+        'image' => 'nullable|image|mimes:jpeg,png,jpg,gif'
+    ]);
+
+    // If new image uploaded
+    if ($request->hasFile('image')) {
+        // Delete old image if it exists
+        if ($post->image && file_exists(public_path('upload/post/' . $post->image))) {
+            unlink(public_path('upload/post/' . $post->image));
+        }
+
+        // Upload new image
+        $imageName = time() . '.' . $request->image->extension();
+        $request->image->move(public_path('upload/post'), $imageName);
+        $post->image = $imageName;
+    }
+
+    $post->title = $request->title;
+    $post->description = $request->description;
+    $post->save();
+
+    return redirect('/blogs')->with('success', 'Post updated successfully!');
+}
+
+
+
+
+
+
 }
