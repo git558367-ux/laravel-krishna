@@ -54,13 +54,7 @@ public function blogs(){
     return view('blogs',compact('posts'));
 }
 
-public function admin(){
-   return view('admin.index');
-}
 
-public function profile(){
-    return view('admin.profile');
-}
 
 public function deletePost($id){
     $product=Post::findOrFail($id);
