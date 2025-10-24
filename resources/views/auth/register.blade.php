@@ -1,52 +1,49 @@
-<x-guest-layout>
-    <form method="POST" action="{{ route('register') }}">
-        @csrf
+@extends('layout.app')
+@section('title', 'Login Form')
+@section('main')
 
-        <!-- Name -->
-        <div>
-            <x-input-label for="name" :value="__('Name')" />
-            <x-text-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
-            <x-input-error :messages="$errors->get('name')" class="mt-2" />
+
+    <div class="ps-account mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 m-auto">
+                    <form action="{{ route('register') }}" method="post">
+                        @csrf
+                        <div class="ps-form--review">
+                            <h2 class="ps-form__title">Register</h2>
+                            <div class="ps-form__group">
+                                <label class="ps-form__label">Name</label>
+                                <input class="form-control ps-form__input" type="text" name="name" value="{{ old('name') }}">
+                            </div>
+                            <div class="ps-form__group">
+                                <label class="ps-form__label">Email address *</label>
+                                <input class="form-control ps-form__input" type="email" name="email"value="{{ old('email') }}" >
+                            </div>
+                            <div class="ps-form__group">
+                                <label class="ps-form__label">Password *</label>
+                                <div class="input-group">
+                                    <input class="form-control ps-form__input" type="password" name="password">
+                                    <div class="input-group-append"><a class="fa fa-eye-slash toogle-password"
+                                            href="javascript: vois(0);"></a></div>
+                                </div>
+                                <div class="ps-form__group">
+                                <label class="ps-form__label">Confirm Password *</label>
+                                <div class="input-group">
+                                    <input class="form-control ps-form__input" type="password" name="password_confirmation">
+                                    <div class="input-group-append"><a class="fa fa-eye-slash toogle-password"
+                                            href="javascript: vois(0);"></a></div>
+                                </div>
+                                <p class="ps-form__text">Hint: The password should be at least twelve characters long. To
+                                    make it stronger, use upper and lower case letters, numbers, and symbols like ! " ? $ %
+                                    ^ & ).</p>
+                            </div>
+                            <div class="ps-form__submit">
+                                <button class="ps-btn ps-btn--warning">Register</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
-
-        <!-- Email Address -->
-        <div class="mt-4">
-            <x-input-label for="email" :value="__('Email')" />
-            <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autocomplete="username" />
-            <x-input-error :messages="$errors->get('email')" class="mt-2" />
-        </div>
-
-        <!-- Password -->
-        <div class="mt-4">
-            <x-input-label for="password" :value="__('Password')" />
-
-            <x-text-input id="password" class="block mt-1 w-full"
-                            type="password"
-                            name="password"
-                            required autocomplete="new-password" />
-
-            <x-input-error :messages="$errors->get('password')" class="mt-2" />
-        </div>
-
-        <!-- Confirm Password -->
-        <div class="mt-4">
-            <x-input-label for="password_confirmation" :value="__('Confirm Password')" />
-
-            <x-text-input id="password_confirmation" class="block mt-1 w-full"
-                            type="password"
-                            name="password_confirmation" required autocomplete="new-password" />
-
-            <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
-        </div>
-
-        <div class="flex items-center justify-end mt-4">
-            <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('login') }}">
-                {{ __('Already registered?') }}
-            </a>
-
-            <x-primary-button class="ms-4">
-                {{ __('Register') }}
-            </x-primary-button>
-        </div>
-    </form>
-</x-guest-layout>
+    </div>
+@endsection

@@ -20,21 +20,9 @@
                     <li><a class="ps-header__item open-search" href="#"><i class="icon-magnifier"></i></a></li>
                     <li><a class="ps-header__item" href="#" id="login-modal"><i class="icon-user"></i></a>
                         <div class="ps-login--modal">
-                            <form method="get" action="do_action">
-                                <div class="form-group">
-                                    <label>Username or Email Address</label>
-                                    <input class="form-control" type="text">
-                                </div>
-                                <div class="form-group">
-                                    <label>Password</label>
-                                    <input class="form-control" type="password">
-                                </div>
-                                <div class="form-group form-check">
-                                    <input class="form-check-input" type="checkbox">
-                                    <label>Remember Me</label>
-                                </div>
-                                <button class="ps-btn ps-btn--warning" type="submit">Log In</button>
-                            </form>
+                            <a href="{{ route('login') }}" class="ps-btn ps-btn--warning mb-2">Login</a>
+                            <a href="{{ route('register') }}" class="ps-btn ps-btn--primary">Register</a>
+
                         </div>
                     </li>
                     <li><a class="ps-header__item" href="wishlist.html"><i class="fa fa-heart-o"></i><span
@@ -83,8 +71,7 @@
                     <form action="do_action" method="post">
                         <div class="ps-search-table">
                             <div class="input-group">
-                                <input class="form-control ps-input" type="text"
-                                    placeholder="Search for products">
+                                <input class="form-control ps-input" type="text" placeholder="Search for products">
                                 <div class="input-group-append"><a href="#"><i class="fa fa-search"></i></a>
                                 </div>
                             </div>
