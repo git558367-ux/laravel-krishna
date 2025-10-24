@@ -15,6 +15,9 @@
                                 <label class="ps-form__label">Email address *</label>
                                 <input class="form-control ps-form__input" type="email" name="email"
                                     value="{{ old('email') }}">
+                                    @error('email')
+                                    <span class="text-danger"> {{ $message }} </span>
+                                @enderror
                             </div>
                             <div class="ps-form__group">
                                 <label class="ps-form__label">Password *</label>
@@ -23,6 +26,9 @@
                                     <div class="input-group-append"><a class="fa fa-eye-slash toogle-password"
                                             href="javascript: vois(0);"></a></div>
                                 </div>
+                                @error('password')
+                                    <span class="text-danger"> {{ $message }} </span>
+                                @enderror
                             </div>
                             <div class="ps-form__submit">
                                 <button class="ps-btn ps-btn--warning">Log in</button>
