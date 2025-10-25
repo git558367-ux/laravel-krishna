@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
@@ -63,3 +64,11 @@ Route::post('/post/update/{id}', [PostController::class, 'updatePost'])->name('u
 Route::get('/admin',[PostController::class,'admin']);
 
 Route::get('/admin/profile',[PostController::class,'profile']);
+
+Route::middleware('auth','role.admin')->prefix('admin')->group(function(){
+    Route::controller(AdminController::class)->group(function(){
+        Route::get('/dashboard','dashboard')->name('admin.dashboard');
+        Route::get('/logout','destroy')->name('admin.logout');
+    });
+});
+
