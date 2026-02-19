@@ -176,15 +176,20 @@
                                     </div>
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li class="bd-user-info-list"><a href="/admin/profile"><i
+                                    <li class="bd-user-info-list"><a href="{{ route('admin.profile') }}"><i
                                         class="ri-user-line"></i>Profile</a>
                                     </li>
                                     <li class="bd-user-info-list"><a href="app-user-billing.html"><i
                                         class="ri-bank-card-line"></i>Plans & Billing</a></li>
                                     <li class="bd-user-info-list"><a href="app-user-security.html"><i
                                         class="ri-settings-2-line"></i>Profile Settings</a></li>
-                                    <li class="bd-user-info-list"><a href="auth-signin-basic.html"><i
-                                        class="ri-logout-circle-line"></i>Logout</a></li>
+                                    <li class="bd-user-info-list">
+                                        <form action="{{ route('logout') }}" method="POST">
+                                            @csrf
+                                           <button type="submit"> <i class="ri-logout-circle-line"></i>Logout</button>
+                                            </form>
+                                        </li>
+                                        
                                 </ul>
                             </div>
                         </div>

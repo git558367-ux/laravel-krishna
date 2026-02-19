@@ -30,15 +30,28 @@ class RegisteredUserController extends Controller
     public function store(Request $request): RedirectResponse
     {
         $request->validate([
-            'name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'lowercase', 'email', 'max:255', 'unique:'.User::class],
-            'password' => ['required', 'confirmed', Rules\Password::defaults()],
+            'name'         => ['required', 'string', 'max:255'],
+            'email'        => ['required', 'string', 'lowercase', 'email', 'max:255', 'unique:users,email'],
+            'employee_id'  => ['required', 'string', 'max:50', 'unique:users,employee_id'],
+            'join_date'    => ['required', 'date'],
+            'phone'        => ['required', 'string', 'max:20'],
+            'birthday'     => ['required', 'date'],
+            'gender'       => ['required', 'in:male,female,other'],
+            'address'      => ['required', 'string', 'max:500'],
+            'password'     => ['required', 'confirmed', Rules\Password::defaults()],
         ]);
 
         $user = User::create([
-            'name' => $request->name,
-            'email' => $request->email,
-            'password' => Hash::make($request->password),
+            'name'         => $request->name,
+            'email'        => $request->email,
+            'employee_id'  => $request->employee_id,
+            'join_date'    => $request->join_date,
+            'phone'        => $request->phone,
+            'birthday'     => $request->birthday,
+            'gender'       => $request->gender,
+            'address'      => $request->address,
+            'role'         => 'user', // default role
+            'password'     => Hash::make($request->password),
         ]);
 
         event(new Registered($user));

@@ -17,126 +17,23 @@
                     <ul class="app-sidebar-main-menu">
 
                         <li class="sidebar-menu-category"><span class="category-name">Main</span></li>
-                        <li class="slide has-sub">
-                            <a href="javascript:void(0);" class="sidebar-menu-item">
-                                <i class="ri-arrow-down-s-fill side-menu-angle"></i>
+                        <li class="slide">
+                            <a href="" class="sidebar-menu-item">
                                 <div class="side-menu-icon">
                                     <i class="">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                                     <path
-                                        d="M14 21C13.4477 21 13 20.5523 13 20V12C13 11.4477 13.4477 11 14 11H20C20.5523 11 21 11.4477 21 12V20C21 20.5523 20.5523 21 20 21H14ZM4 13C3.44772 13 3 12.5523 3 12V4C3 3.44772 3.44772 3 4 3H10C10.5523 3 11 3.44772 11 4V12C11 12.5523 10.5523 13 10 13H4ZM9 11V5H5V11H9ZM4 21C3.44772 21 3 20.5523 3 20V16C3 15.4477 3.44772 15 4 15H10C10.5523 15 11 15.4477 11 16V20C11 20.5523 10.5523 21 10 21H4ZM5 19H9V17H5V19ZM15 19H19V13H15V19ZM13 4C13 3.44772 13.4477 3 14 3H20C20.5523 3 21 3.44772 21 4V8C21 8.55228 20.5523 9 20 9H14C13.4477 9 13 8.55228 13 8V4ZM15 5V7H19V5H15Z">
+                                        d="M19 7H24V9H19V7ZM17 12H24V14H17V12ZM20 17H24V19H20V17ZM2 22C2 17.5817 5.58172 14 10 14C14.4183 14 18 17.5817 18 22H16C16 18.6863 13.3137 16 10 16C6.68629 16 4 18.6863 4 22H2ZM10 13C6.685 13 4 10.315 4 7C4 3.685 6.685 1 10 1C13.315 1 16 3.685 16 7C16 10.315 13.315 13 10 13ZM10 11C12.21 11 14 9.21 14 7C14 4.79 12.21 3 10 3C7.79 3 6 4.79 6 7C6 9.21 7.79 11 10 11Z">
                                     </path>
                                 </svg>
                             </i>
                                 </div>
                                 <span class="sidebar-menu-label">Dashboard</span>
                             </a>
-                            <ul class="sidebar-menu child1">
-                                <li class="slide"><a class="sidebar-menu-item" href="index.html">Ecommerce</a></li>
-                                <li class="slide"><a class="sidebar-menu-item" href="index-2.html">CRM</a></li>
-                                <li class="slide"><a class="sidebar-menu-item" href="index-3.html">HRM</a></li>
-                                <li class="slide"><a class="sidebar-menu-item" href="index-4.html">Job</a></li>
-                            </ul>
                         </li>
 
-                        <li class="sidebar-menu-category"><span class="category-name">Apps</span></li>
-                        <li class="slide has-sub">
-                            <a href="javascript:void(0);" class="sidebar-menu-item">
-                                <div class="side-menu-icon">
-                                    <i class="">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                    <path
-                                        d="M3.16113 4.46875C5.58508 2.0448 9.44716 1.9355 12.0008 4.14085C14.5528 1.9355 18.4149 2.0448 20.8388 4.46875C23.2584 6.88836 23.3716 10.741 21.1785 13.2947L13.4142 21.0858C12.6686 21.8313 11.4809 21.8652 10.6952 21.1874L10.5858 21.0858L2.82141 13.2947C0.628282 10.741 0.741522 6.88836 3.16113 4.46875ZM4.57534 5.88296C2.86819 7.59011 2.81942 10.3276 4.42902 12.0937L4.57534 12.2469L12 19.6715L17.3026 14.3675L13.7677 10.8327L12.7071 11.8934C11.5355 13.0649 9.636 13.0649 8.46443 11.8934C7.29286 10.7218 7.29286 8.8223 8.46443 7.65073L10.5656 5.54823C8.85292 4.17713 6.37076 4.23993 4.7286 5.73663L4.57534 5.88296ZM13.0606 8.71139C13.4511 8.32086 14.0843 8.32086 14.4748 8.71139L18.7168 12.9533L19.4246 12.2469C21.1819 10.4896 21.1819 7.64032 19.4246 5.88296C17.7174 4.17581 14.9799 4.12704 13.2139 5.73663L13.0606 5.88296L9.87864 9.06494C9.51601 9.42757 9.49011 9.99942 9.80094 10.3919L9.87864 10.4792C10.2413 10.8418 10.8131 10.8677 11.2056 10.5569L11.2929 10.4792L13.0606 8.71139Z">
-                                    </path>
-                                </svg>
-                            </i>
-                                </div>
-                                <span class="sidebar-menu-label">CRM Apps</span>
-                                <i class="ri-arrow-down-s-fill side-menu-angle"></i>
-                            </a>
-                            <ul class="sidebar-menu child1">
-                                <li class="slide">
-                                    <a href="crm-contacts.html" class="sidebar-menu-item">Contacts</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="crm-companies.html" class="sidebar-menu-item">Companies</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="crm-deals.html" class="sidebar-menu-item">Deals</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="crm-deals-details.html" class="sidebar-menu-item">Deals Overview</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="crm-leads.html" class="sidebar-menu-item">Leads</a>
-                                </li>
-                                <li class="slide">
-                                    <a href="crm-leads-details.html" class="sidebar-menu-item">Leads Overview</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="slide has-sub">
-                            <a href="javascript:void(0);" class="sidebar-menu-item">
-                                <div class="side-menu-icon">
-                                    <i class="">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                                    <path
-                                        d="M12 11C14.7614 11 17 13.2386 17 16V22H15V16C15 14.4023 13.7511 13.0963 12.1763 13.0051L12 13C10.4023 13 9.09634 14.2489 9.00509 15.8237L9 16V22H7V16C7 13.2386 9.23858 11 12 11ZM5.5 14C5.77885 14 6.05009 14.0326 6.3101 14.0942C6.14202 14.594 6.03873 15.122 6.00896 15.6693L6 16L6.0007 16.0856C5.88757 16.0456 5.76821 16.0187 5.64446 16.0069L5.5 16C4.7203 16 4.07955 16.5949 4.00687 17.3555L4 17.5V22H2V17.5C2 15.567 3.567 14 5.5 14ZM18.5 14C20.433 14 22 15.567 22 17.5V22H20V17.5C20 16.7203 19.4051 16.0796 18.6445 16.0069L18.5 16C18.3248 16 18.1566 16.03 18.0003 16.0852L18 16C18 15.3343 17.8916 14.694 17.6915 14.0956C17.9499 14.0326 18.2211 14 18.5 14ZM5.5 8C6.88071 8 8 9.11929 8 10.5C8 11.8807 6.88071 13 5.5 13C4.11929 13 3 11.8807 3 10.5C3 9.11929 4.11929 8 5.5 8ZM18.5 8C19.8807 8 21 9.11929 21 10.5C21 11.8807 19.8807 13 18.5 13C17.1193 13 16 11.8807 16 10.5C16 9.11929 17.1193 8 18.5 8ZM5.5 10C5.22386 10 5 10.2239 5 10.5C5 10.7761 5.22386 11 5.5 11C5.77614 11 6 10.7761 6 10.5C6 10.2239 5.77614 10 5.5 10ZM18.5 10C18.2239 10 18 10.2239 18 10.5C18 10.7761 18.2239 11 18.5 11C18.7761 11 19 10.7761 19 10.5C19 10.2239 18.7761 10 18.5 10ZM12 2C14.2091 2 16 3.79086 16 6C16 8.20914 14.2091 10 12 10C9.79086 10 8 8.20914 8 6C8 3.79086 9.79086 2 12 2ZM12 4C10.8954 4 10 4.89543 10 6C10 7.10457 10.8954 8 12 8C13.1046 8 14 7.10457 14 6C14 4.89543 13.1046 4 12 4Z">
-                                    </path>
-                                </svg>
-                            </i>
-                                </div>
-                                <span class="sidebar-menu-label">HRM Apps</span>
-                                <i class="ri-arrow-down-s-fill side-menu-angle"></i>
-                            </a>
-                            <ul class="sidebar-menu child1">
-                                <li class="slide"> <a href="hrm-employee-dashboard.html" class="sidebar-menu-item">Employee
-                                        Dashboard</a></li>
-                                <li class="slide"> <a href="hrm-employee.html" class="sidebar-menu-item">Employee</a>
-                                </li>
-                                <li class="slide"> <a href="hrm-employee-details.html" class="sidebar-menu-item">Employee
-                                        Details</a></li>
-                                <li class="slide"> <a href="hrm-designations.html" class="sidebar-menu-item">Designations</a>
-                                </li>
-                                <li class="slide"> <a href="hrm-attendance.html" class="sidebar-menu-item">Admin
-                                        Attendance</a></li>
-                                <li class="slide"> <a href="hrm-employee-attendance.html" class="sidebar-menu-item">Employee
-                                        Attendance</a></li>
-                                <li class="slide"> <a href="hrm-biometric-attendance.html" class="sidebar-menu-item">Biometric
-                                        Attendance</a>
-                                </li>
-                                <li class="slide"> <a href="hrm-office-loan.html" class="sidebar-menu-item">Office
-                                        Loan</a>
-                                </li>
-                                <li class="slide"> <a href="hrm-personal-loan.html" class="sidebar-menu-item">Personal
-                                        Loan</a></li>
-                                <li class="slide"> <a href="hrm-leaves.html" class="sidebar-menu-item">Admin Leave</a>
-                                </li>
-                                <li class="slide"> <a href="hrm-leaves-employee.html" class="sidebar-menu-item">Employee
-                                        Leave</a></li>
-                                <li class="slide"> <a href="hrm-holidays.html" class="sidebar-menu-item">Holidays</a>
-                                </li>
-                                <li class="slide"> <a href="hrm-timesheet.html" class="sidebar-menu-item">Time Sheet</a>
-                                </li>
-                                <li class="slide"> <a href="hrm-schedule.html" class="sidebar-menu-item">Schedule</a>
-                                </li>
-                                <li class="slide"> <a href="hrm-overtime.html" class="sidebar-menu-item">Overtime</a>
-                                </li>
-                                <li class="slide"> <a href="hrm-warning.html" class="sidebar-menu-item">Warning</a></li>
-                                <li class="slide"> <a href="hrm-termination.html" class="sidebar-menu-item">Termination</a>
-                                </li>
-                                <li class="slide"> <a href="hrm-training.html" class="sidebar-menu-item">Training</a>
-                                </li>
-                                <li class="slide"> <a href="hrm-resignation.html" class="sidebar-menu-item">Resignation</a>
-                                </li>
-                                <li class="slide"> <a href="hrm-promotion.html" class="sidebar-menu-item">Promotion</a>
-                                </li>
-                                <li class="slide"> <a href="hrm-award.html" class="sidebar-menu-item">Award</a></li>
-                                <li class="slide"> <a href="hrm-meeting.html" class="sidebar-menu-item">Meeting</a></li>
-                                <li class="slide"> <a href="hrm-transfer.html" class="sidebar-menu-item">Transfer</a>
-                                </li>
-                            </ul>
-                        </li>
+                        <li class="sidebar-menu-category"><span class="category-name"></span></li>
+                        
                         <li class="slide has-sub">
                             <a href="javascript:void(0);" class="sidebar-menu-item">
                                 <div class="side-menu-icon">
@@ -148,67 +45,16 @@
                                 </svg>
                             </i>
                                 </div>
-                                <span class="sidebar-menu-label">Ecommerce Admin</span>
+                                <span class="sidebar-menu-label">Products</span>
                                 <i class="ri-arrow-down-s-fill side-menu-angle"></i>
                             </a>
                             <ul class="sidebar-menu child1">
                                 <li class="slide">
-                                    <a class="sidebar-menu-item" href="ecommerce-product-list.html">Products List</a>
+                                    <a class="sidebar-menu-item" href="{{  route('products.index') }}">Products List</a>
                                 </li>
+                                
                                 <li class="slide">
-                                    <a class="sidebar-menu-item" href="ecommerce-product-grid.html">Product Grid</a>
-                                </li>
-                                <li class="slide">
-                                    <a class="sidebar-menu-item" href="ecommerce-add-product.html">Add Products</a>
-                                </li>
-                                <li class="slide">
-                                    <a class="sidebar-menu-item" href="ecommerce-edit-product.html">Edit Products</a>
-                                </li>
-                                <li class="slide">
-                                    <a class="sidebar-menu-item" href="ecommerce-product-details.html">Product
-                                        Details</a>
-                                </li>
-                                <li class="slide">
-                                    <a class="sidebar-menu-item" href="ecommerce-order-list.html">Order List</a>
-                                </li>
-                                <li class="slide">
-                                    <a class="sidebar-menu-item" href="ecommerce-order-details.html">Order Details</a>
-                                </li>
-                                <li class="slide">
-                                    <a class="sidebar-menu-item" href="ecommerce-cart.html">Shop Cart</a>
-                                </li>
-                                <li class="slide">
-                                    <a class="sidebar-menu-item" href="ecommerce-checkout.html">Checkout</a>
-                                </li>
-                                <li class="slide">
-                                    <a class="sidebar-menu-item" href="ecommerce-wishlist.html">Shopping Wishlist</a>
-                                </li>
-                                <li class="slide">
-                                    <a class="sidebar-menu-item" href="ecommerce-payment-methods.html">Payment
-                                        Methods</a>
-                                </li>
-                                <li class="slide">
-                                    <a class="sidebar-menu-item" href="ecommerce-refund-requests.html">Refund
-                                        Requests</a>
-                                </li>
-                                <li class="slide">
-                                    <a class="sidebar-menu-item" href="ecommerce-sellers.html">Sellers</a>
-                                </li>
-                                <li class="slide">
-                                    <a class="sidebar-menu-item" href="ecommerce-seller-details.html">Seller Details</a>
-                                </li>
-                                <li class="slide">
-                                    <a class="sidebar-menu-item" href="ecommerce-become-seller.html">Become A Seller</a>
-                                </li>
-                                <li class="slide">
-                                    <a class="sidebar-menu-item" href="ecommerce-customer-list.html">Customers List</a>
-                                </li>
-                                <li class="slide">
-                                    <a class="sidebar-menu-item" href="ecommerce-add-customer.html">Add Customer</a>
-                                </li>
-                                <li class="slide">
-                                    <a class="sidebar-menu-item" href="ecommerce-manage-reviews.html">Customer
-                                        Reviews</a>
+                                    <a class="sidebar-menu-item" href="{{ route('products.create')}}">Add Products</a>
                                 </li>
                             </ul>
                         </li>

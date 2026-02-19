@@ -4,14 +4,15 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Post;
+use App\Models\Product;
 
 class PostController extends Controller
 {
 
 
     public function about(){
-        $userid=[1,2,3,4];
-        return view('about',compact('userid'));
+        $latestProducts = Product::orderBy('id', 'desc')->take(10)->get();
+        return view('index',compact('latestProducts'));
         
     }
 
