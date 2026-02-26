@@ -1,10 +1,11 @@
+
 @extends('layout.app')
 
 @section('title', 'My Medi')
 
 @section('main')
     <style>
-        .ps-section--banner{
+        .ps-section--banner {
             z-index: 1 !importent;
         }
     </style>
@@ -241,7 +242,7 @@
                 <div class="container">
                     <h3 class="ps-section__title">Latest products</h3>
                     <div class="ps-section__carousel">
-                        <div class="owl-carousel" data-owl-auto="false" data-owl-loop="true" data-owl-speed="13000"
+                        <div class="owl-carousel" data-owl-auto="false" data-owl-loop=" true" data-owl-speed="13000"
                             data-owl-gap="0" data-owl-nav="true" data-owl-dots="true" data-owl-item="5"
                             data-owl-item-xs="2" data-owl-item-sm="2" data-owl-item-md="3" data-owl-item-lg="5"
                             data-owl-item-xl="5" data-owl-duration="1000" data-owl-mousedrag="on">
@@ -251,7 +252,7 @@
                                     <div class="ps-product ps-product--standard">
 
                                         <div class="ps-product__thumbnail">
-                                            <a class="ps-product__image" href="">
+                                            <a class="ps-product__image" href="#">
                                                 <figure>
                                                     <img src="{{ asset('uploads/' . $product->image) }}"
                                                         alt="{{ $product->name }}">
@@ -261,24 +262,26 @@
 
                                         <div class="ps-product__content">
                                             <h5 class="ps-product__title">
-                                                <a href="">
+                                                <a href="#">
                                                     {{ $product->name }}
                                                 </a>
                                             </h5>
-                                            <div class="ps-product__rating">
 
+                                            <div class="ps-product__rating">
                                                 <select class="ps-rating" data-read-only="true">
                                                     @for ($i = 1; $i <= 5; $i++)
                                                         <option value="{{ $i }}"
                                                             @if ($product->rating == $i) selected @endif>
-                                                            {{ $i }}</option>
+                                                            {{ $i }}
+                                                        </option>
                                                     @endfor
                                                 </select>
-
                                             </div>
 
                                             <div class="ps-product__meta">
-                                                <span class="ps-product__price">₹{{ $product->price }}</span>
+                                                <span class="ps-product__price">
+                                                    ₹{{ $product->price }}
+                                                </span>
                                             </div>
 
                                             <form action="{{ route('cart.add', $product->id) }}" method="POST">
@@ -289,17 +292,11 @@
                                             </form>
 
                                         </div>
-
                                     </div>
                                 </div>
                             @endforeach
-                        </div>
-                        <div class="ps-product__meta">
-                            <span class="ps-product__price">₹{{ $product->price }}</span>
-                        </div>
 
-                       
-
+                        </div>
                     </div>
                 </div>
             </section>

@@ -25,7 +25,7 @@
 
                         <div class="ps-login--modal">
                             @auth
-                                <a href="{{ route('profile.edit') }}" class="ps-btn ps-btn--primary mb-2">
+                                <a href="{{ route('user.profile') }}" class="ps-btn ps-btn--primary mb-2">
                                     Profile
                                 </a>
 

@@ -6,6 +6,7 @@ use App\Http\Controllers\productcontroller;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\AdminProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\User\ProfileController as UserProfileController;
 use App\Http\Controllers\CartController;
 
 
@@ -95,3 +96,15 @@ Route::post('/cart/remove/{id}', [CartController::class, 'remove'])->name('cart.
 Route::get('/checkout', function () {
     return view('checkout');
 })->name('checkout');
+Route::middleware(['auth'])->group(function () {
+
+    Route::get('/user/profile', [UserProfileController::class, 'show'])
+        ->name('user.profile');
+
+    Route::get('/user/profile/edit', [UserProfileController::class, 'edit'])
+        ->name('user.profile.edit');
+
+    Route::put('/user/profile/update', [UserProfileController::class, 'update'])
+        ->name('user.profile.update');
+
+});
